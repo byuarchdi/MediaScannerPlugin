@@ -26,10 +26,6 @@
           <feature name="MediaScannerPlugin" >
             <param name="android-package" value="org.sfl.MediaScannerPlugin.MediaScannerPlugin"/>
           </feature>
-          <intent-filter>
-                <action android:name="android.intent.action.MEDIA_MOUNTED" />
-                <data android:scheme="file" />
-            </intent-filter>
         </config-file>
 
         <source-file src="src/android/MediaScannerPlugin.java" 
