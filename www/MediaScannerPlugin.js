@@ -18,7 +18,7 @@ module.exports = {
             console.log("MediaScannerPlugin Error: failureCallback is not a function");
         }
         else {
-            return cordova.exec(completeFilePath, successCallback, failureCallback);
+            return cordova.exec(successCallback, failureCallback, completeFilePath);
         }
     }
 };
