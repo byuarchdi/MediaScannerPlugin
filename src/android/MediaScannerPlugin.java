@@ -33,7 +33,7 @@ public class MediaScannerPlugin extends CordovaPlugin {
             * making it available in the Android Gallery application and to other apps. */
             //cordova.getActivity().sendBroadcast(new Intent(Intent.ACTION_MEDIA_MOUNTED, Uri.parse("file:///mnt/sdcard"))); 
             
-            scanFile(args.getString(0));
+            MediaScannerConnection.scanFile(args.getString(0));
             
             callbackContext.success();
 
